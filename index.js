@@ -3,6 +3,10 @@ import dotenv from "dotenv";
 dotenv.config();
 const app = express();
 
+app.get("/", (req, res) => {
+  res.send(<h1>JHOME PAGE</h1>);
+});
+
 app.get("/facebook", (req, res) => {
   res.send("FACEBOOK APP IS HERE");
 });
