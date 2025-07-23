@@ -4,7 +4,7 @@ dotenv.config();
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send(<h1>JHOME PAGE</h1>);
+  res.send("Home Page");
 });
 
 app.get("/facebook", (req, res) => {
